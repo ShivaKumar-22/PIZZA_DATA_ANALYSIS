@@ -26,18 +26,30 @@ pizzas ⇄ pizza_types (via pizza_type_id)
 
 3. Business Questions & SQL Analysis
 ✅ Business Question	🧮 Query Performed
-Total number of orders placed	               COUNT(DISTINCT order_id), 
+Total number of orders placed	               COUNT(DISTINCT order_id),
+
 Total revenue generated	                     SUM(quantity * price), 
-Highest-priced pizza	                       TOP 1 ORDER BY price DESC, 
+
+Highest-priced pizza	                       TOP 1 ORDER BY price DESC,
+ 
 Most common pizza size ordered	             GROUP BY size, 
+
 Top 5 most ordered pizza types	             TOP 5 ORDER BY quantity DESC, 
+
 Total quantity by pizza category	           GROUP BY category, 
+
 Orders by hour of day	                       DATEPART(hour, time), 
+
 No. of pizzas per category	                 GROUP BY category, 
+
 Average pizzas ordered per day	             AVG(count per day), 
+
 Top 3 revenue-generating pizzas	             TOP 3 ORDER BY revenue DESC, 
+
 Revenue contribution by category and by pizza	  % contribution with subquery, 
+
 Cumulative revenue over time	                  SUM() OVER (ORDER BY date), 
+
 Top 3 pizzas per category based on revenue	    RANK() OVER (PARTITION BY category), 
 
 ⭐ Key Points from Data
