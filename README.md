@@ -26,6 +26,7 @@ pizzas ⇄ pizza_types (via pizza_type_id)
 
 3. Business Questions & SQL Analysis
 ✅ Business Question	🧮 Query Performed
+
 Total number of orders placed	               COUNT(DISTINCT order_id),
 
 Total revenue generated	                     SUM(quantity * price), 
